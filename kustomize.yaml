@@ -8,8 +8,6 @@ spec:
     repoURL: 'https://github.com/solorpeng/block-buster.git'
     targetRevision: HEAD
     path: 'nginx'
-    kustomize:
-      namePrefix: nginx-
   destination:
     server: 'https://kubernetes.default.svc'
   syncPolicy:
