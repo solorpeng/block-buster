@@ -16,7 +16,7 @@ spec:	        #这是关于该Deployment的描述，可以理解为你期待该D
     spec:	    #期望Pod实现的功能（即在pod中部署）
       containers:	#生成container，与docker中的container是同一种
       - name: nginx	#container的名称
-        image: nginx:1.7.9	#使用镜像nginx:1.7.9创建container，该container默认80访问
+        image: nginx	#使用镜像nginx:1.7.9创建container，该container默认80访问
         livenessProbe: # 存活探针检测
           httpGet:
             path: /nginx_status
